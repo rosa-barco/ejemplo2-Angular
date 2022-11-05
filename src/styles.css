@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    font-family: Rooboto, "Helvetica Neue", sans-serif;
+}
+
+html, body{
+    background-color: #FFFFFF;
+    margin: 20px;
+    color: #0c0c0c;
+}
+
+button{
+    background-color: #0c0c0c;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color: #0c0c0c;
+}
+
+button:focus{
+    outline: none;
+}
+
+.row{
+    display: flex;
+}
+
+
+.col{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+input{
+    display: block;
+    margin: 5px;
+}
