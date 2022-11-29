@@ -14,7 +14,8 @@ export class AgregarComponent {
   
   @Input() regAlumno:AlumnosUtl={
     nombre:'',
-    edad: 0
+    edad: 0,
+    correo: ""
   }
 
   constructor(private alumnosutl:UtlService){}
@@ -30,7 +31,8 @@ export class AgregarComponent {
     
     this.regAlumno = {
       nombre: '',
-      edad: 0
+      edad: 0,
+      correo: ''
     }
   }
 

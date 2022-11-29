@@ -3,5 +3,6 @@
 <form (ngSubmit)="agregar()">
     <input type="text" name="nombre" [(ngModel)]="regAlumno.nombre" placeholder="Nombre">
     <input type="number" name="edad" [(ngModel)]="regAlumno.edad" placeholder="Edad">
+    <input type="mail" name="mail" [(ngModel)]="regAlumno.correo" placeholder="Correo">
     <button type="submit">Agregar</button>
 </form>

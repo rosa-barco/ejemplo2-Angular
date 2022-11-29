@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AlumnosUtl } from '../Interfaces/utl.Interface';
 import { UtlService } from '../services/utl.service';
 
@@ -8,7 +8,9 @@ import { UtlService } from '../services/utl.service';
   templateUrl: './alumnos.component.html',
   styleUrls: ['./alumnos.component.css']
 })
-export class AlumnosComponent {
+export class AlumnosComponent implements OnInit {
+
+  dataSource:any=[];
 
   //@Input() alumnosUtl:AlumnosUtl[] = [];
 
@@ -18,5 +20,14 @@ export class AlumnosComponent {
 
   constructor(private alumnosUtl: UtlService){
   }
+
+  ngOnInit(): void {
+    this.alumnosUtl.getAlumnos().subscribe(response=>{
+      this.dataSource=response;
+      console.log(this.dataSource);
+    }, error=>console.log(error));
+  }
+
+  
 
 }

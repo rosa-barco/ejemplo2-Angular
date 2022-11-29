@@ -11,7 +11,8 @@ export class MainPageComponent {
 
   regAlumno:AlumnosUtl={
     nombre: 'Pablo',
-    edad: 24
+    edad: 24,
+    correo: 'pablo@correo.com'
   }
   
 }

@@ -1,5 +1,9 @@
 <h3>Alumnos UTL</h3>
 <hr>
-<ul *ngFor="let alum of alumnos">
-    <li>{{alum.nombre}} - {{alum.edad}}</li>
-</ul>
+<table>
+    <tr *ngFor="let alum of dataSource">
+        <td>{{alum.nombre}}</td>
+        <td>{{alum.edad}}</td>
+        <td>{{alum.correo}}</td>
+    </tr>
+</table>
